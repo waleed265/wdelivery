@@ -20,7 +20,7 @@ class NamesTesCase(unittest.TestCase):
         client = main.app.test_client()
 
         r = client.get('/')
-        assert r.status_code == 400, "status code should be '400'"
+        assert r.status_code == 200, "status code should be '200'"
         #assert 'Hello' in r.data.decode('utf-8')
 
         #self.assertTrue('teaher'.islower())
