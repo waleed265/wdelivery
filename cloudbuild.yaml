@@ -6,7 +6,4 @@ steps:
     - |
        pip3 install -r requirements.txt
        python3 main_test.py
-       
-- name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy"]
-timeout: "1600s"
+      

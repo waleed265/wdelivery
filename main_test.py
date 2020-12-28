@@ -6,5 +6,5 @@ def test_index():
     client = main.app.test_client()
 
     r = client.get('/')
-    assert r.status_code == 400
+    assert r.status_code == 400, "status code should be '400'"
     assert 'Hello World' in r.data.decode('utf-8')
