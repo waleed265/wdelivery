@@ -14,7 +14,7 @@ class NamesTesCase(unittest.TestCase):
         #self.assertTrue('teaher'.islower())
 
     def test_index1(self):
-        print("Welcome")
+        print("Welcome to CICD")
         
         main.app.testing = True 
         client = main.app.test_client()
