@@ -1,0 +1,10 @@
+# Code owners file.
+# This file controls who is tagged for review for any given pull request.
+
+# The java-samples-reviewers team is the default owner for anything not
+# explicitly taken by someone else.
+*                         @GoogleCloudPlatform/java-samples-reviewers
+
+/datastore/                     @GoogleCloudPlatform/firestore-dpe @GoogleCloudPlatform/java-samples-reviewers
+/firestore/                     @GoogleCloudPlatform/firestore-dpe @GoogleCloudPlatform/java-samples-reviewers
+/logging/                       @GoogleCloudPlatform/observability-devx @GoogleCloudPlatform/java-samples-reviewers
