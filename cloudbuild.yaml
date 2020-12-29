@@ -1,12 +1,8 @@
 steps:
-- name: 'python:3.7'
-  entrypoint: 'bash'
-  args:
-    - '-c'
-    - |
-       pip3 install -r requirements.txt
-       python3 main_test.py
-      
-- name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy"]
-timeout: "1600s"
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['clean', 'verify']
+  dir: '/home/gcpuseracount/wdelivery/java/java-docs-samples/appengine-java8/helloworld'
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['HelloAppEngine', 'deploy']
+  dir: '/home/gcpuseracount/wdelivery/java/java-docs-samples/appengine-java8/helloworld'
+  
