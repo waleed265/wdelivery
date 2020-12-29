@@ -1,3 +1,4 @@
 {
-    "csharp.suppressDotnetRestoreNotification": false
+    "csharp.suppressDotnetRestoreNotification": false,
+    "java.dependency.syncWithFolderExplorer": false
 }
