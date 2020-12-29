@@ -1,8 +1,8 @@
 steps:
 - name: 'gcr.io/cloud-builders/mvn'
   args: ['clean', 'verify']
-  dir: 'https://github.com/waleed265/wdelivery/tree/main/javaapp/java-docs-samples-master/appengine-java8/helloworld'
+  dir: '/wdelivery/javaapp/java-docs-samples-master/appengine-java8/helloworld/pom.xml'
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['HelloAppEngine', 'deploy']
-  dir: 'https://github.com/waleed265/wdelivery/tree/main/javaapp/java-docs-samples-master/appengine-java8/helloworld'
+  dir: '/wdelivery/javaapp/java-docs-samples-master/appengine-java8/helloworld/pom.xml'
   
