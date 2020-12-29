@@ -1,9 +1,8 @@
 steps:
 - name: 'gcr.io/cloud-builders/mvn'
   args: ['clean', 'verify']
-  dir: 'function/dir/from/repo/root'
+  dir: '/javaapp/java-docs-samples-master/appengine-java8/helloworld'
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['HelloAppEngine', 'deploy']
-  dir: 'function/dir/from/repo/root'
-  
+  dir: '/javaapp/java-docs-samples-master/appengine-java8/helloworld'
   
